@@ -2,6 +2,7 @@ package com.example.applicationnotification
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 
 class MainActivity : AppCompatActivity() {
 
@@ -11,5 +12,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        btnSend = findViewById(R.id.btn_send_notificat)
+        btnSend.setOnClickListener{
+
+        }
     }
 }
