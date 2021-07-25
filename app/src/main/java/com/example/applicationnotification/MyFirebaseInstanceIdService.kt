@@ -10,7 +10,7 @@ import com.google.firebase.messaging.FirebaseMessagingService
 
 class MyFirebaseInstanceIdService : FirebaseMessagingService() {
 
-    override fun onNewToken() {
+    override fun onNewToken(p0: String) {
         Log.i("**newTokenService", FirebaseMessaging.getInstance().token.toString())
     }
 }

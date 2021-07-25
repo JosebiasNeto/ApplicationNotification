@@ -1,8 +1,13 @@
 package com.example.applicationnotification
 
+import android.content.ContentValues.TAG
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
+import com.google.android.gms.tasks.OnCompleteListener
+import com.google.firebase.messaging.FirebaseMessaging
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -16,5 +21,8 @@ class MainActivity : AppCompatActivity() {
         btnSend.setOnClickListener{
         this.showNotification("1234", "Bootcamp Android", "Kotlin Android Course")
         }
+
+
+        Log.i("**newToken", FirebaseMessaging.getInstance().token.toString())
     }
 }
